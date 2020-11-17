@@ -1,0 +1,38 @@
+[core]
+
+name: uranium
+
+tags: uranium
+
+#resourceRate: 1
+
+generation_delay: 40
+
+
+[graphics]
+
+[projectile_1]
+@define tags: all
+@global tags: all
+tags: all
+directDamage:0
+life:0
+
+
+[projectile_2]
+tags: all
+directDamage:0
+life:0
+
+
+[global_resource_uranium]
+
+displayName: Uranium
+
+displayNameShort: U
+
+priority: 1
+
+displayColor:#C0C0C0
+
+#reference to by price: t=1000
