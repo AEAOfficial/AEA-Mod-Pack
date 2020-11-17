@@ -1,0 +1,7 @@
+[mod]
+title: Anti Air Flak Buff
+description: Buffs flak turret
+
+tags: unit restrictions
+
+thumbnail: mod-thumbnail.png

@@ -1,0 +1,25 @@
+[core]
+
+name: uranium
+
+tags: uranium
+
+#resourceRate: 1
+
+generation_delay: 40
+
+
+[graphics]
+
+
+[global_resource_uranium]
+
+displayName: Uranium
+
+displayNameShort: U
+
+priority: 1
+
+displayColor:#C0C0C0
+
+#reference to by price: t=1000

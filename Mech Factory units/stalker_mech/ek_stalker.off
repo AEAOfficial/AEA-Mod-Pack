@@ -1,0 +1,100 @@
+
+[core]
+name: Stalker
+
+copyFrom: mechs_small_unique.ini
+
+price: 500
+maxHp: 350
+mass: 2500
+
+techLevel: 1
+buildSpeed: 0.0025
+#availableInDemo: true
+
+radius: 10
+displayRadius: 8
+
+energyMax: 4
+energyRegen: 0.010
+energyNeedsToRechargeToFull: true
+
+[graphics]
+
+image: topGun.png
+
+image_wreak:  NONE
+#image_turret: topGun.png
+
+image_shadow: SHADOW:topGun.png
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits:   true
+canAttackUnderwaterUnits: false
+
+turretSize: 20
+turretTurnSpeed: 3
+
+maxAttackRange: 160
+shootDelay: 50
+
+turretRotateWithBody: false
+
+[turret_1]
+x: 0
+y: 0
+idleDir:0
+
+turnSpeed: 2.9
+turnSpeedAcceleration: 0.3
+
+canShoot: false
+
+#note: lock_body_rotation_with_main_turret is needed for recoil to work on the body
+recoilOffset: -2
+recoilOutTime: 3
+recoilReturnTime: 4
+
+
+[turret_2]
+#
+x: 3
+y: 9
+attachedTo: 1
+slave: true
+invisible: true
+
+projectile: 1
+
+turnSpeed: 4.0
+turnSpeedAcceleration: 1.0
+
+shoot_sound:gun_fire
+shoot_sound_vol:0.2
+shoot_flame:small
+shoot_light:#FFfffb92
+
+canShoot: true
+
+size: 0
+
+
+#energyUsage: 1
+
+#warmup:12
+
+#chargeEffectImage: SHARED:lighting_charge.png
+
+[projectile_1]
+directDamage: 15
+life: 10
+speed: 4
+instant: true
+largeHitEffect: false
+frame: 1
+
+[movement]
+
+moveSpeed: 0.7
