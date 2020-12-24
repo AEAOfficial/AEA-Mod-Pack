@@ -1,0 +1,25 @@
+
+[effect_muzzleSmoke]
+life: 50
+lifeRandom: 10
+alsoEmitEffects: CUSTOM:muzzleSmoke2*3
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+dirSpeedRandom: 0.2
+
+[effect_muzzleSmoke2]
+life: 50
+lifeRandom: 10
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+dirSpeedRandom: 0.2

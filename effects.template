@@ -1,0 +1,3 @@
+
+[core]
+copyFrom:ROOT:effects/explosions.template, ROOT:effects/flares.template, ROOT:effects/trails.template, ROOT:effects/water.template, ROOT:effects/plasma.template, ROOT:effects/muzzle.template

@@ -1,0 +1,14 @@
+
+[effect_projectileSmoke]
+life: 50
+lifeRandom: 10
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.1
+xSpeedRelativeRandom: 0.1
+dirSpeedRandom: 0.2
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true

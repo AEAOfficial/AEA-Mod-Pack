@@ -1,5 +1,5 @@
 [mod]
-title: AEA Beta Testers Edition 1.4.7a(git)
+title: AEA Beta Testers Edition 1.4.8a(git)
 description: AEA Mod Pack beta edition, open for public testing. Updates will be frequent, designed for testing new ideas/changes before they hit the main version. 
 
 tags: Units

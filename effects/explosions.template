@@ -1,0 +1,99 @@
+
+[effect_smallLightGround]
+life:10
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 0.6
+scaleTo: 0.6
+color:#ffd500
+
+[effect_lightGround]
+life:15
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 1
+scaleTo: 1
+color:#ffd500
+
+[effect_dirt]
+life: 120
+lifeRandom: 30
+alsoEmitEffects: CUSTOM:dirt2*3
+image: ROOT:shared/dirt.png
+physics: true
+physicsGravity: 0.5
+hSpeed:2
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.5
+xSpeedRelativeRandom: 0.5
+
+[effect_dirt2]
+life: 120
+lifeRandom: 30
+image: ROOT:shared/dirt.png
+physics: true
+physicsGravity: 0.5
+hSpeed:2
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.5
+xSpeedRelativeRandom: 0.5
+
+[effect_dirtySmoke]
+life: 100
+lifeRandom: 30
+alsoEmitEffects: CUSTOM:dirtySmoke2*3
+attachedToUnit: false
+image: ROOT:shared/dirtySmoke.png
+scaleFrom: 2
+scaleTo: 3
+alpha: 0.6
+ySpeedRelativeRandom: 0.15
+xSpeedRelativeRandom: 0.15
+dirSpeedRandom: 0.2
+hSpeed: 1
+hSpeedRandom: 0.25
+atmospheric: true
+physics: true
+physicsGravity: 0.25
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true
+
+[effect_dirtySmoke2]
+life: 100
+lifeRandom: 30
+attachedToUnit: false
+image: ROOT:shared/dirtySmoke.png
+scaleFrom: 2
+scaleTo: 3
+alpha: 0.6
+ySpeedRelativeRandom: 0.15
+xSpeedRelativeRandom: 0.15
+dirSpeedRandom: 0.2
+hSpeed: 1
+hSpeedRandom: 0.25
+atmospheric: true
+physics: true
+physicsGravity: 0.25
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true
+
+[effect_smallYellowExplosion]
+life: 15
+
+scaleFrom: 0.75
+scaleTo: 0.75
+
+attachedToUnit: false
+atmospheric: true
+
+image:ROOT:shared/energeticSpark2.png
+
+total_frames: 14
+
+dirOffsetRandom: 180
+
+animateFrameStart: 0
+animateFrameEnd: 13
+#animateFramePingPong: true
+animateFrameSpeed: 0.5
+
