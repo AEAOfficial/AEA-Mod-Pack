@@ -1,3 +1,14 @@
+[effect_missileFlare1]
+life: 10
+lifeRandom: 5
+spawnChance: 0.25
+alwayStartDirAtZero: true
+ifSpawnFailsEmitEffects: CUSTOM:missileFlare2
+image: ROOT:shared/yellow_flare.png
+yOffsetRelative: -3.5
+@define missileFlareSize: 0.1
+scaleFrom: ${missileFlareSize}
+scaleTo: ${missileFlareSize}
 
 [effect_missileFlare2]
 ifSpawnFailsEmitEffects: CUSTOM:missileFlare3

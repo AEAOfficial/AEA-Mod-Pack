@@ -49,6 +49,7 @@ idleDir: 180
 @copyFromSection: template_ChainTurret
 idleDir: 270
 
+
 [hiddenAction_delete]
 autoTrigger: if self.timeAlive(laterThanSeconds=3)
 deleteSelf: true

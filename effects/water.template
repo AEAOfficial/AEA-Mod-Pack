@@ -6,6 +6,10 @@ scaleFrom: 0
 scaleTo: 0.8
 createWhenOverLand: false
 
+[effect_waterSplash]
+life:0
+alsoEmitEffects: CUSTOM:wave, CUSTOM:waterSplash1, CUSTOM:waterSplash2, CUSTOM:waterSplash3, CUSTOM:waterSplash4*3, CUSTOM:waterSplash5*5
+
 [effect_waterSplash1]
 life: 100
 image: ROOT:shared/bubbles.png

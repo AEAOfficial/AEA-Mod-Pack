@@ -15,6 +15,31 @@ scaleFrom: 1
 scaleTo: 1
 color:#ffd500
 
+[effect_radialExplosionWater]
+life: 35
+drawUnderUnits: true
+image: ROOT:shared/shockwave2.png
+scaleFrom: 1
+scaleTo: 1.5
+fadeOut: true
+color:#BFEEF5
+createWhenOverLand: false
+alsoEmitEffects: CUSTOM|radialExplosionWater2
+atmospheric: true
+
+[effect_radialExplosionWater2]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave2.png
+scaleFrom: 1
+scaleTo: 2
+fadeOut: true
+color:#BFEEF5
+createWhenOverLand: false
+atmospheric: true
+alsoPlaySound: ROOT:shared/water.wav
+sound_vol: 0.8
+
 [effect_dirt]
 life: 120
 lifeRandom: 30
@@ -76,6 +101,12 @@ physics: true
 physicsGravity: 0.25
 imageShadow: SHADOW:ROOT:shared/smoke.png
 shadow: true
+
+[effect_dirtyExplosion]
+life:0
+alsoEmitEffects: CUSTOM:lightGround, CUSTOM:dirt, shockwave, CUSTOM:dirtySmoke, smallExplosion
+createWhenOverLiquid: false
+
 
 [effect_smallYellowExplosion]
 life: 15
