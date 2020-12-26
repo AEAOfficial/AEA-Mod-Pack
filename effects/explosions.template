@@ -7,6 +7,8 @@ scaleFrom: 0.6
 scaleTo: 0.6
 color:#ffd500
 
+
+
 [effect_lightGround]
 life:15
 drawUnderUnits: true
@@ -15,30 +17,44 @@ scaleFrom: 1
 scaleTo: 1
 color:#ffd500
 
+
+
+
 [effect_radialExplosionWater]
 life: 35
 drawUnderUnits: true
 image: ROOT:shared/shockwave2.png
 scaleFrom: 1
-scaleTo: 1.5
+scaleTo: 1
 fadeOut: true
 color:#BFEEF5
 createWhenOverLand: false
 alsoEmitEffects: CUSTOM|radialExplosionWater2
 atmospheric: true
 
+
+
 [effect_radialExplosionWater2]
 life: 25
 drawUnderUnits: true
 image: ROOT:shared/shockwave2.png
 scaleFrom: 1
-scaleTo: 2
+scaleTo: 1.6
 fadeOut: true
 color:#BFEEF5
 createWhenOverLand: false
 atmospheric: true
-alsoPlaySound: ROOT:shared/water.wav
-sound_vol: 0.8
+
+
+
+[effect_shockWave]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave.png
+scaleFrom: 1
+scaleTo: 2.5
+fadeOut: true
+
 
 [effect_dirt]
 life: 120
@@ -52,6 +68,10 @@ hSpeedRandom: 0.5
 ySpeedRelativeRandom: 0.5
 xSpeedRelativeRandom: 0.5
 
+
+
+
+
 [effect_dirt2]
 life: 120
 lifeRandom: 30
@@ -62,6 +82,9 @@ hSpeed:2
 hSpeedRandom: 0.5
 ySpeedRelativeRandom: 0.5
 xSpeedRelativeRandom: 0.5
+
+
+
 
 [effect_dirtySmoke]
 life: 100
@@ -83,6 +106,10 @@ physicsGravity: 0.25
 imageShadow: SHADOW:ROOT:shared/smoke.png
 shadow: true
 
+
+
+
+
 [effect_dirtySmoke2]
 life: 100
 lifeRandom: 30
@@ -102,27 +129,29 @@ physicsGravity: 0.25
 imageShadow: SHADOW:ROOT:shared/smoke.png
 shadow: true
 
+
+
+
+
 [effect_dirtyExplosion]
 life:0
-alsoEmitEffects: CUSTOM:lightGround, CUSTOM:dirt, shockwave, CUSTOM:dirtySmoke, smallExplosion
+alsoEmitEffects: CUSTOM:lightGround, CUSTOM:dirt, CUSTOM:dirtySmoke, smallExplosion
 createWhenOverLiquid: false
+
+
+
+
 
 
 [effect_smallYellowExplosion]
 life: 15
-
 scaleFrom: 0.75
 scaleTo: 0.75
-
 attachedToUnit: false
 atmospheric: true
-
 image:ROOT:shared/energeticSpark2.png
-
 total_frames: 14
-
 dirOffsetRandom: 180
-
 animateFrameStart: 0
 animateFrameEnd: 13
 #animateFramePingPong: true
