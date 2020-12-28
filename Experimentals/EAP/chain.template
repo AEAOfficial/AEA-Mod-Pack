@@ -32,6 +32,8 @@ limitingMinRange: 20
 warmup: 10
 delay: 999
 turnSpeed: 360
+projectile: lightning2
+
 
 [turret_fire_1]
 @copyFromSection: template_ChainTurret

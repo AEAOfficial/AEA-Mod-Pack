@@ -15,12 +15,19 @@ maxAttackRange: 190
 @define damage: 950
 directDamage: ${int(damage/(1+number))}
 
-life: 25
+life: 20
 instant: true
 lightingEffect: true
 largeHitEffect: true
+laserEffect: false
 
 
+
+
+
+wobbleAmplitude: 12
+wobbleFrequency: 1
+spawnProjectilesOnCreate: lightning
 shieldDamageMultiplier: 1.5
 shieldDefectionMultiplier: 0.1
 
@@ -32,6 +39,31 @@ explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
 explodeEffectOnShield:CUSTOM:lightningShock*1, CUSTOM:hitLightFlash
 
 spawnUnit: p_chainLightning_${number+1}(offsetRandomDir=360)
+
+
+[projectile_lightning2]
+#@define damage: 999999
+#directDamage: 1250
+
+@define damage: 950
+directDamage: ${int(damage/(1+number))}
+
+life: 20
+instant: true
+lightingEffect: true
+largeHitEffect: true
+
+wobbleAmplitude: 12
+wobbleFrequency: 1
+shieldDamageMultiplier: 1.5
+shieldDefectionMultiplier: 0.1
+
+buildingDamageMultiplier: 0.5
+
+explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
+
+
+explodeEffectOnShield:CUSTOM:lightningShock*1, CUSTOM:hitLightFlash
 
 
 [template_turret]
@@ -60,6 +92,7 @@ drawUnderUnits:false
 
 [effect_lightningShock]
 life: 60
+
 
 
 hOffset: 0
