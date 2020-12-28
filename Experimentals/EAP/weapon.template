@@ -12,7 +12,7 @@ maxAttackRange: 190
 #@define damage: 999999
 #directDamage: 1250
 
-@define damage: 950
+@define damage: 350
 directDamage: ${int(damage/(1+number))}
 
 life: 20
@@ -45,7 +45,7 @@ spawnUnit: p_chainLightning_${number+1}(offsetRandomDir=360)
 #@define damage: 999999
 #directDamage: 1250
 
-@define damage: 950
+@define damage: 350
 directDamage: ${int(damage/(1+number))}
 
 life: 20
