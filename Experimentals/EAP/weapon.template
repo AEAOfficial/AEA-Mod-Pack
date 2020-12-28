@@ -9,8 +9,11 @@ turretTurnSpeed: 4
 maxAttackRange: 190
 
 [projectile_lightning]
-@define damage: 999999
-directDamage: 999999
+#@define damage: 999999
+#directDamage: 1250
+
+@define damage: 950
+directDamage: ${int(damage/(1+number))}
 
 life: 25
 instant: true
@@ -18,7 +21,7 @@ lightingEffect: true
 largeHitEffect: true
 
 
-shieldDamageMultiplier: 1
+shieldDamageMultiplier: 1.5
 shieldDefectionMultiplier: 0.1
 
 buildingDamageMultiplier: 0.5

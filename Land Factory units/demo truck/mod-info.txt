@@ -1,7 +1,0 @@
-[mod]
-title: Demo Truck
-description: Adds a Demolition Truck to the game.
-
-tags: units
-
-thumbnail: mod_thumbnail.png
