@@ -1,8 +1,0 @@
-[mod]
-title: AEA Mod Pack 1.4.7
-description: A combination of all your favorite mods, balanced together for super fun and dynamic gameplay!
-
-tags: Units
-
-thumbnail: mod-thumbnail.png
-
