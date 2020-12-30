@@ -25,8 +25,8 @@ laserEffect: false
 
 
 
-wobbleAmplitude: 12
-wobbleFrequency: 1
+#obbleAmplitude: 12
+#wobbleFrequency: 1
 spawnProjectilesOnCreate: lightning
 shieldDamageMultiplier: 1.5
 shieldDefectionMultiplier: 0.1
@@ -53,8 +53,8 @@ instant: true
 lightingEffect: true
 largeHitEffect: true
 
-wobbleAmplitude: 12
-wobbleFrequency: 1
+#wobbleAmplitude: 12
+#wobbleFrequency: 1
 shieldDamageMultiplier: 1.5
 shieldDefectionMultiplier: 0.1
 
