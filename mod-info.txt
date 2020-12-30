@@ -4,5 +4,5 @@ description: AEA Mod Pack beta edition, open for public testing. Updates will be
 
 tags: Units
 
-thumbnail: mod-thumbnail-beta.png
+thumbnail: shared/mod-thumbnail-beta.png
 
