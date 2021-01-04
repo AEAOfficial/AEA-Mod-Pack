@@ -28,10 +28,10 @@ laserEffect: false
 wobbleAmplitude: 12
 wobbleFrequency: 1
 spawnProjectilesOnCreate: lightning
-shieldDamageMultiplier: 1.5
-shieldDefectionMultiplier: 0.1
+shieldDamageMultiplier: 2
+shieldDefectionMultiplier: 0
 
-buildingDamageMultiplier: 0.5
+buildingDamageMultiplier: 0.4
 
 explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
 
