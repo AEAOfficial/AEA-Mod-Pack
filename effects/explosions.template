@@ -55,6 +55,13 @@ scaleFrom: 1
 scaleTo: 2.5
 fadeOut: true
 
+[effect_bigshockWave]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave.png
+scaleFrom: 1
+scaleTo: 5.5
+fadeOut: true
 
 [effect_dirt]
 life: 120
