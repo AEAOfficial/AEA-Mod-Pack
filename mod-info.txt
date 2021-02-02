@@ -6,3 +6,6 @@ tags: Units
 
 thumbnail: shared/mod-thumbnail-beta.png
 
+[music]
+sourceFolder: music/
+whenUsingUnitsFromThisMod_playExclusively: true
