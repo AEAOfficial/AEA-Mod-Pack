@@ -40,6 +40,15 @@ image: ROOT:shared/flareRed.png
 scaleFrom: 0.25
 scaleTo: 0.25
 
+[effect_mineFlare]
+life: 10
+lifeRandom: 5
+alwayStartDirAtZero: true
+image: ROOT:shared/flareRed.png
+scaleFrom: 0.25
+scaleTo: 0.25
+showInFog: true
+
 [effect_redCircleFlare]
 life: 10
 lifeRandom: 5
