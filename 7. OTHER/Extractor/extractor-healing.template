@@ -1,6 +1,8 @@
 
 # AREA HEALING PROTOTYPE
 
+
+autoTriggerCooldownTime: 2s
 [action_areaHeal]
 displayType: action
 iconImage: ROOT:shared/nanoBurstIcon.png
@@ -17,6 +19,8 @@ canPlayerCancel: false
 #spawnEffects: CUSTOM:powerAura, CUSTOM:powerAura2
 autoTrigger: true
 
+
+
 [turret_heal]
 # AREA HEAL TURRET
 x: 0
@@ -29,13 +33,10 @@ limitingRange: 220
 canAttackFlyingUnits: false
 canAttackLandUnits: false
 canAttackUnderwaterUnits: false
-
-#onShoot_playAnimation:
-
 projectile: 3
 
 turnSpeed: 5.0
-#turnSpeedAcceleration: 1.5
+
 
 shoot_sound:NONE
 shoot_sound_vol:0.5
@@ -53,28 +54,21 @@ warmup:0
 
 [projectile_3]
 # HEALING BURST
-areaDamage: -200
+
+areaDamage: -20
+areaDamageNoFalloff:true
 areaRadius: 220
-
 targetGround: true
-
 areaExpandTime: 90
 areaHitAirAndLandAtSameTime: true
-
 speed: 0
-
 life: 0
 instant: false
 largeHitEffect: true
-
 explodeOnEndOfLife: true
-
 deflectionPower: -1
-
 shieldDamageMultiplier: 0
 buildingDamageMultiplier: 0.1
-
 friendlyFire: only-ignoreEnemy
-
-explodeEffect: CUSTOM:healLights
+explodeEffect: CUSTOM:healSparksYellow*14, CUSTOM:healBodyLightYellow, CUSTOM:yellowHealing
 
