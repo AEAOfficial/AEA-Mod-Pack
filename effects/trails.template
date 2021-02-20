@@ -36,6 +36,31 @@ hOffset: 2
 
 
 
+[effect_dustCloud]
+attachedToUnit: false
+life: 60
+xOffsetRelativeRandom: 2
+yOffsetRelativeRandom: 2
+dirOffsetRandom: 180
+xSpeedRelativeRandom: 0.3
+ySpeedRelativeRandom: 0.3
+hSpeed: 0
+hOffset: 3
+hOffsetRandom: 1
+dirSpeedRandom: 1
+fadeInTime: 3
+atmospheric: true
+delayedStartTimer: 10
+drawUnderUnits: true
+alpha: 0.9
+image:ROOT:shared/dust_cloud.png
+imageShadow:ROOT:shared/dust_cloud.png
+scaleFrom: 2
+scaleTo: 3.5
+color: #FFFFFF
+priority: low
+
+
 
 
 [effect_smoke]
