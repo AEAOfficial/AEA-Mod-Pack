@@ -7,8 +7,8 @@ fadeOut: true
 attachedToUnit: true
 color:#32cc32
 fadeInTime: 0
-scaleFrom: 0.3
-scaleTo: 2
+scaleFrom: 1
+scaleTo: 4.7
 alpha:  0.2
 dirSpeedRandom: 30
 drawUnderUnits: true
@@ -29,7 +29,7 @@ dirSpeedRandom: 1
 fadeInTime: 10
 image: ROOT:shared/nanoSparksYellow.png
 scaleFrom: 0.5
-scaleTo: 0.4
+scaleTo: 1
 #color: #BFFF00
 color:#32cc32
 priority: high
@@ -48,7 +48,7 @@ attachedToUnit: true
 color: #BFFF00
 drawUnderUnits: false
 scaleFrom: 0
-scaleTo: 8
+scaleTo: 10.1
 priority: low
 alpha: 0.2
 drawUnderUnits: true
