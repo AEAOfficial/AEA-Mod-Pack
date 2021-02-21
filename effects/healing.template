@@ -5,13 +5,15 @@ image:ROOT:shared/shockwave_large.png
 life: 30
 fadeOut: true
 attachedToUnit: true
-color: #ffffe0
+color:#32cc32
 fadeInTime: 0
 scaleFrom: 0.3
-scaleTo: 1.8
-alpha: 1.2
+scaleTo: 2
+alpha:  0.2
 dirSpeedRandom: 30
 drawUnderUnits: true
+
+
 
 
 
@@ -28,8 +30,11 @@ fadeInTime: 10
 image: ROOT:shared/nanoSparksYellow.png
 scaleFrom: 0.5
 scaleTo: 0.4
-color: #ffff00
+#color: #BFFF00
+color:#32cc32
 priority: high
+
+
 
 
 
@@ -40,13 +45,13 @@ life: 50
 fadeOut: true
 fadeInTime: 1
 attachedToUnit: true
-color: #ffff00
+color: #BFFF00
 drawUnderUnits: false
 scaleFrom: 0
 scaleTo: 8
 priority: low
-alpha: 0.5
-
+alpha: 0.2
+drawUnderUnits: true
 
 
 
