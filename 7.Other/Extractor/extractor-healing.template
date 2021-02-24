@@ -28,7 +28,7 @@ y: 0
 
 invisible: true
 
-limitingRange: 220
+limitingRange: 250
 
 canAttackFlyingUnits: false
 canAttackLandUnits: false
@@ -57,7 +57,7 @@ warmup:0
 
 areaDamage: -20
 areaDamageNoFalloff:true
-areaRadius: 220
+areaRadius: 250
 targetGround: true
 areaExpandTime: 90
 areaHitAirAndLandAtSameTime: true

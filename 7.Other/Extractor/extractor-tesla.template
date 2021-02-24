@@ -6,8 +6,8 @@ canAttackLandUnits:   true
 canAttackUnderwaterUnits: false
 turretSize: 0.1
 turretTurnSpeed: 4
-maxAttackRange: 220
-shootDelay: 18
+maxAttackRange: 250
+shootDelay: 80
 
 [turret_1]
 #coil
@@ -36,7 +36,7 @@ lightingEffect: true
 largeHitEffect: true
 shieldDamageMultiplier: 1.5
 shieldDefectionMultiplier: 0.1
-buildingDamageMultiplier: 0.4
+buildingDamageMultiplier: 0.5
 explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
 explodeEffectOnShield:CUSTOM:lightningShock*1, CUSTOM:hitLightFlash
 drawUnderUnits: false
