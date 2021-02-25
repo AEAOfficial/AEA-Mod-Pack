@@ -3,6 +3,7 @@
 
 
 autoTriggerCooldownTime: 2s
+
 [action_areaHeal]
 displayType: action
 iconImage: ROOT:shared/nanoBurstIcon.png
