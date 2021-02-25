@@ -1,8 +1,3 @@
-
-
-
-
-
 [effect_smokeW]
 xOffsetRelative:18
 yOffsetRelative:5
@@ -15,7 +10,7 @@ scaleTo: 2.5
 xSpeedRelativeRandom: 0.1
 ySpeedRelativeRandom: 0.1
 hSpeed: 0.1
-image: smoke.png
+image:ROOT:shared/smokeC.png
 priority: critical
 drawUnderUnits:false
 atmospheric:true
@@ -32,7 +27,7 @@ scaleTo: 3
 xSpeedRelativeRandom: 0.1
 ySpeedRelativeRandom: 0.1
 hSpeed: 0.1
-image: smoke.png
+image:ROOT:shared/smokeC.png
 priority: critical
 drawUnderUnits:false
 atmospheric:true
@@ -309,7 +304,7 @@ scaleTo: 2.5
 xSpeedRelativeRandom: 0.1
 ySpeedRelativeRandom: 0.1
 hSpeed: 0.1
-image: smoke.png
+image:ROOT:shared/smokeC.png
 priority: critical
 drawUnderUnits:false
 atmospheric:true
