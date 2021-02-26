@@ -56,7 +56,7 @@ warmup:0
 [projectile_3]
 # HEALING BURST
 
-areaDamage: -20
+areaDamage: -100
 areaDamageNoFalloff:true
 areaRadius: 250
 targetGround: true
@@ -69,7 +69,7 @@ largeHitEffect: true
 explodeOnEndOfLife: true
 deflectionPower: -1
 shieldDamageMultiplier: 0
-buildingDamageMultiplier: 0.1
+#buildingDamageMultiplier: 0.1
 friendlyFire: only-ignoreEnemy
 explodeEffect: CUSTOM:healBodyLightYellow, CUSTOM:yellowHealing
 
