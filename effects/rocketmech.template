@@ -1,6 +1,8 @@
 
 # ROCKET MECH                       ############################################################
 
+
+
 [effect_backblast]
 frameIndex: 0
 stripIndex: effects
@@ -49,7 +51,7 @@ liveAfterAttachedDies: true
 
 
 
-[effect_powerAura2]
+[effect_powerAura4]
 priority:low
 image:ROOT:shared/energy.png
 life: 380
@@ -130,9 +132,9 @@ liveAfterAttachedDies: true
 
 
 
-[effect_powerAura]
+[effect_powerAura3]
 priority:high
-image: energy.png
+image:ROOT:shared/energy.png
 life: 380
 fadeOut: true
 attachedToUnit: true
