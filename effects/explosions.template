@@ -42,7 +42,24 @@ fadeOut: true
 attachedToUnit: true
 alpha:0.3
 
+[effect_missileShockwaveBlue]
+life: 100
+frameIndex: 0
+stripIndex: shockwave
+priority: high
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+scaleFrom: 0.15
+scaleTo: 4
+fadeInTime: 1
+fadeOut: true
+attachedToUnit: true
+alpha:1
 
+color: #3377FF
 
 [effect_radialExplosionWater]
 life: 35

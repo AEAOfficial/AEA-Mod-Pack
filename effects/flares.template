@@ -24,6 +24,7 @@ scaleFrom: ${missileFlareSize}
 scaleTo: ${missileFlareSize}
 color: #3377FF
 
+
 [effect_missileFlare2]
 ifSpawnFailsEmitEffects: CUSTOM:missileFlare3
 @copyFromSection: effect_missileFlare1
