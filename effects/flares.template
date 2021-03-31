@@ -23,7 +23,7 @@ yOffsetRelative: -3.5
 scaleFrom: ${missileFlareSize}
 scaleTo: ${missileFlareSize}
 color: #3377FF
-
+alpha: 1
 
 [effect_missileFlare2]
 ifSpawnFailsEmitEffects: CUSTOM:missileFlare3
