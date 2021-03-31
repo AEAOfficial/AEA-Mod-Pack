@@ -43,7 +43,7 @@ attachedToUnit: true
 alpha:0.3
 
 [effect_missileShockwaveBlue]
-life: 100
+life: 600
 frameIndex: 0
 stripIndex: shockwave
 priority: high
