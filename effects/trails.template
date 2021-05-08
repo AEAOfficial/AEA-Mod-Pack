@@ -34,6 +34,136 @@ dirSpeedRandom: 2
 hOffset: 2
 
 
+[effect_trailDropship]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.52
+scaleTo:0.52
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailDropship2]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -25
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.35
+scaleTo:0.35
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailMAE]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+
+yOffsetRelative: -12
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.30
+scaleTo:0.30
+alpha: 0.25
+drawUnderUnits: true
+liveAfterAttachedDies: true
+atmospheric: true
+
+[effect_trailPhantom]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+
+yOffsetRelative: -12
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.35
+scaleTo:0.35
+alpha: 0.25
+drawUnderUnits: true
+liveAfterAttachedDies: true
+atmospheric: true
+
+[effect_trails2]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.52
+scaleTo:0.52
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailGrand]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -2
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.70
+scaleTo:0.70
+alpha: 0.35
+drawUnderUnits:true
+liveAfterAttachedDies: true
+
+[effect_thrustGrand]
+priority:low
+image:ROOT:shared/jet.png
+life: 5
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -10
+xOffsetRelative: -15
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.05
+scaleTo:0.05
+alpha: 1
+drawUnderUnits:false
+liveAfterAttachedDies: true
+color: #FF4500
+
+[effect_trailbomber]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.45
+scaleTo:0.45
+alpha: 0.1
+drawUnderUnits:false
+liveAfterAttachedDies: true
 
 
 [effect_dustCloud]
