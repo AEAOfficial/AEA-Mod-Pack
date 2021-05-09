@@ -1,0 +1,14 @@
+[hiddenAction_avoid]
+autoTrigger: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=0) and numberOfUnitsInTeam(withtag='canattackround', withinrange=300 , lessthan=10)
+clearActiveWaypoint: true
+[hiddenAction_avoid2]
+autoTrigger: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, lessthan=2) and numberOfUnitsInTeam(withtag='canattackground', withinrange=300 , greaterhan=10)
+addWaypoint_type: attackMove
+addWaypoint_target_randomUnit_maxRange: 570
+addWaypoint_target_randomUnit_tagged: antiair
+[hiddenAction_avoid3]
+autoTrigger: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=2, lessthan=5) and numberOfUnitsInTeam(withtag='canattackground', withinrange=300 , lessthan=25)
+clearActiveWaypoint: true
+[hiddenAction_avoid4]
+autoTrigger: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=2, lessthan=5) and numberOfUnitsInTeam(withtag='canattackground', withinrange=300 , greaterhan=25)
+addWaypoint_type: attackMove
