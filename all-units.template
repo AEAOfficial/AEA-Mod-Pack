@@ -70,19 +70,23 @@ addActionCooldownTime: 15s
 [action_Retreat]
 buildSpeed: 0s
 text: Retreat
-ai_isHighPriority: if self.hp(lessThan=${core.maxHp * 0.55}) or numberOfUnitsInTeam(withinRange=200, lessThan=4) and self.resource(type='diff', greaterThan=6) and not self.tags(includes='buildi') or not self.energy(full=true)
+description: Tell this Unit to go to a Repair Bay
 isVisible: if not self.tags(includes='aibuilder') and not self.tags(includes='buildi')
 addWaypoint_type: follow
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
 clearAllWaypoints: true
-addActionCooldownTime: 2s
+addActionCooldownTime: 6s
 
 [action_AiStrongRetreat]
 text: retreat (AI)
 isVisible: if not self.tags(includes='aibuilder') and self.isControlledByAI() and not self.tags(includes='buildi')
-ai_isHighPriority: if numberOfUnitsInEnemyTeam(withtag='strong', withinRange=400, greaterThan=0) and not self.hasUnitInTeam(withinRange=400, greaterThan=2) and self.resource(type='diff', greaterThan=6)
-#alsoQueueAction: Retreat
+autoTrigger: if self.hasUnitInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.35}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6)
+addWaypoint_type: move
+addWaypoint_target_nearestUnit_tagged: fallback
+addWaypoint_target_nearestUnit_team: own
+#addWaypoint_prepend: true
+clearAllWaypoints: true
 
 [action_DEFENDER]
 text: AI Defender
@@ -92,7 +96,8 @@ isVisible: if self.isControlledByAI() and not self.tags(includes='defMe') and no
 ai_isHighPriority: if numberOfUnitsInTeam(withTag='Defender', lessThan=5, withinRange=400) and self.hp(full=true) and not numberOfUnitsInEnemyTeam(withinRange=300, greaterThan=2) and self.timeAlive(laterThanSeconds=10) and self.resource(type='diff', greaterThan=9) or self.globalTeamTags(includes='defensive') and numberOfUnitsInTeam(withTag='Defender', lessThan=15)
 ai_isDisabled: if self.tags(includes='defMe')
 temporarilyAddTags: Defender
-
+addActionCooldownTime: 60s
+addActionCooldownApplyToActions: TOOMANYDEFENDER
 
 [action_TOOMANYDEFENDER]
 text: AI No Defender
@@ -108,7 +113,7 @@ temporarilyRemoveTags: Defender
 [action_Defend]
 buildSpeed: 0s
 text: Defend
-ai_isHighPriority: if self.tags(includes='Defender') and not self.hasActiveWaypoint(type='follow')
+autoTrigger: if self.tags(includes='Defender') and not self.hasActiveWaypoint(type='guard')
 isVisible: if self.tags(includes='Defender')
 addWaypoint_type: guard
 clearAllWaypoints: true
@@ -116,7 +121,6 @@ clearAllWaypoints: true
 addWaypoint_target_randomUnit_tagged: defme
 addWaypoint_target_randomUnit_team: own
 addWaypoint_target_randomUnit_maxRange: 500
-addActionCooldownTime: 10s
 #----
 
 #RALLY
