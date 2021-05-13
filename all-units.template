@@ -71,7 +71,7 @@ addActionCooldownTime: 15s
 buildSpeed: 0s
 text: Retreat
 description: Tell this Unit to go to a Repair Bay
-isVisible: if not self.tags(includes='aibuilder') and not self.tags(includes='buildi')
+isVisible: if not self.tags(includes='buildi')
 addWaypoint_type: follow
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
@@ -80,8 +80,8 @@ addActionCooldownTime: 6s
 
 [action_AiStrongRetreat]
 text: retreat (AI)
-isVisible: if not self.tags(includes='aibuilder') and self.isControlledByAI() and not self.tags(includes='buildi')
-autoTrigger: if self.hasUnitInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.35}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6)
+isVisible: false
+autoTrigger: if self.hasUnitInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI()
 addWaypoint_type: move
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
@@ -144,7 +144,7 @@ temporarilyAddTags: AttRallyMove
 text: Attack Rally Force
 #autoTrigger: if self.tags(includes='AttRallyMove')
 buildSpeed: 0s
-isVisible: if self.isControlledByAI() and not self.tags(includes='buildi') or not self.tags(includes='defme')
+isVisible: if self.isControlledByAI() and not self.tags(includes='buildi')
 ai_isHighPriority: if self.tags(includes='Atrally')
 addWaypoint_type: attackMove
 addWaypoint_target_nearestUnit_tagged: AssuRally
@@ -154,7 +154,7 @@ addWaypoint_target_nearestUnit_team: ally
 #Assault
 text: Assault Rally
 description: Charge Twords Attack Rallys
-isVisible: if self.isControlledByAI and not self.tags(includes='defme') and not self.tags(includes='buildi')
+isVisible: if self.isControlledByAI() and not self.tags(includes='defme') and not self.tags(includes='buildi')
 ai_isHighPriority: if self.numberOfUnitsInAllyNotOwnTeam(withTag='AssuRally', greaterThan=0) and not self.tags(includes='defme')
 buildSpeed: 0.1s
 addWaypoint_prepend: true
@@ -168,7 +168,7 @@ temporarilyAddTags: AssultBegin
 clearAllWaypoints: true
 [action_assultForce]
 text: Assualt Rally Force
-isVisible: if self.isControlledByAI() and not self.tags(includes='buildi') or not self.tags(includes='defme')
+isVisible: if self.isControlledByAI() and not self.tags(includes='buildi')
 ai_isHighPriority: if self.tags(includes='AssuRally')
 
 buildSpeed: 0s
@@ -182,7 +182,7 @@ addWaypoint_prepend: true
 #Defend
 text: Defend Rally
 description: Defend Rally
-isVisible: if self.isControlledByAI and not self.tags(includes='defme') and not self.tags(includes='buildi')
+isVisible: if self.isControlledByAI() and not self.tags(includes='defme') and not self.tags(includes='buildi')
 ai_isHighPriority: if self.numberOfUnitsInAllyNotOwnTeam(withTag='Drally', greaterThan=0) and numberOfUnitsInTeam(withTag='DefRallyMove', lessThan=5) and not self.tags(includes='defme')
 buildSpeed: 0.1s
 
