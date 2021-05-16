@@ -1,4 +1,0 @@
-[hiddenAction_avoid]
-autoTrigger: if numberOfUnitsInEnemyTeam(withTag='antiair', greaterThan=0, withinRange=420)
-clearActiveWaypoint: true
-ai_isHighPriority: true

@@ -1,0 +1,136 @@
+
+[core]
+copyFrom: ROOT:effects.template
+
+[projectile_1]
+#pot pot
+directDamage: 55
+life: 140
+speed: 8
+frame: 6
+
+lightColor: #ff00ff00
+lightSize: 0.6
+
+[projectile_3]
+#missile
+directDamage: 70
+
+drawSize: 1.1
+life: 240
+speed: 0.3
+targetSpeed: 6
+trailEffect: CUSTOM:falre, CUSTOM:projectileSmoke
+trailEffectRate: 2
+largeHitEffect: true
+#ballistic: true
+#ballistic_delaymove_height:40
+#ballistic_height: 50
+frame: 4
+
+#targetGround: true
+#targetGroundSpread: 25
+
+areaDamage: 180
+areaRadius: 65
+
+autoTargetingOnDeadTarget: true
+
+#explodeEffect: smallExplosion
+lightColor: #3377FF
+lightSize: 1.8
+
+color:#3377FF
+
+wobbleAmplitude: 0.4
+wobbleFrequency: 0.8s
+
+gravity:100
+#88
+initialUnguidedSpeedHeight: 100
+#90
+
+#turnSpeed:2
+[projectile_Sconan]
+#railgun
+directDamage:1
+life: 15
+speed: 35
+
+areaExpandTime: 0
+
+drawSize: 0.55
+
+deflectionPower: -1
+nukeWeapon: true
+laserEffect: true
+instant: true
+instantReuseLast: true
+
+color:#FF3695ff
+
+areaDamage: 6400
+areaRadius: 200
+
+largeHitEffect: true
+lightColor: #FF3695ff
+lightSize: 0.95
+
+
+image: railgun_projectile.png
+
+#shieldDamageMultiplier: 2
+
+hitSound: true
+
+#explodeEffect: CUSTOM:railPassThrough, CUSTOM:railImpactSparks*10, CUSTOM:railShockwave, CUSTOM:railLight, CUSTOM:railExplosion, CUSTOM:railScorchMark, CUSTOM:railScorchMarkSmoke*7
+#explodeEffectOnShield: CUSTOM:railPassThrough, CUSTOM:railImpactSparks*10, CUSTOM:railShockwave, CUSTOM:railLight, CUSTOM:railExplosion, CUSTOM:railScorchMark, CUSTOM:railScorchMarkSmoke*7
+
+trailEffect: NONE
+[projectile_Sconan2]
+@copyFromSection: projectile_Sconan
+areaDamage: 6400
+areaRadius: 200
+
+[projectile_beam]
+#=== for the beam effect ===
+life: 20
+instant:true
+instantReuseLast: true
+instantReuseLast_alsoChangeTurretAim: true
+moveWithParent: true
+targetGround: true
+targetGroundHeightOffset: 0
+
+beamImage:      SHARED:beam3.png
+beamImageEnd:   SHARED:beam1_end.png
+beamImageStart: SHARED:beam1_start.png
+
+
+explodeEffect: NONE
+explodeEffectOnShield: NONE
+
+sweepOffset: 0
+sweepOffsetFromTargetRadius:0
+sweepSpeed:10
+
+directDamage: 0
+color: #f90000
+[projectile_Dummy]
+#dummy
+directDamage: 0
+life: 0
+speed: 0
+drawSize: 0
+color: #46ebff
+lightColor: #46ebff
+lightSize: 0
+targetGround: true
+targetGroundHeightOffset: 0
+targetGroundSpread: 0
+
+
+[projectile_Dummy2]
+@copyFromSection: projectile_Dummy
+instant:true
+explodeEffect: CUSTOM:missileShockwaveBlue
