@@ -28,7 +28,7 @@ temporarilyAddTags: air
 buildSpeed: 0s
 isVisible: if self.isControlledByAI()
 text: aiRun
-ai_isHighPriority: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=0) and not numberOfUnitsInTeam(withinRange=150, greaterThan=4, withTag='air')
+ai_isHighPriority: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=0) and not numberOfUnitsInTeam(withinRange=250, greaterThan=4, withTag='air') and not self.hp(greaterThan=1000)
 addWaypoint_type: follow
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
