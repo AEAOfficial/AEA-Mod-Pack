@@ -1,0 +1,108 @@
+[core]
+
+name: uranium
+
+tags: uranium
+
+#resourceRate: 1
+
+generation_delay: 40
+
+[global_resource_uranium]
+
+displayName: Uranium
+
+displayNameShort: U
+
+priority: 1
+
+displayColor:#C0C0C0
+
+#reference to by price: t=1000
+
+[hiddenAction_AirTag]
+autoTriggerOnEvent: created
+temporarilyAddTags: air
+
+[action_aiRun]
+buildSpeed: 0s
+isVisible: if self.isControlledByAI()
+text: aiRun
+ai_isHighPriority: if numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=0) and not numberOfUnitsInTeam(withinRange=250, greaterThan=4, withTag='air') and not self.hp(greaterThan=1000)
+addWaypoint_type: follow
+addWaypoint_target_nearestUnit_tagged: fallback
+addWaypoint_target_nearestUnit_team: own
+clearAllWaypoints: true
+addWaypoint_maxTime: 3s
+addActionCooldownTime: 5s
+
+[core]
+autoTriggerCooldownTime: 10
+
+[attachment_defenderDebug]
+x:0
+y:0
+
+[action_attackhigh]
+text: Attack Builders
+#isVisible: if self.isControlledByAI()
+addWaypoint_type: attack
+addWaypoint_prepend: true
+addWaypoint_maxTime: 15s
+addWaypoint_target_nearestUnit_tagged: aibuilder
+addWaypoint_target_nearestUnit_team: enemy
+addWaypoint_target_mapMustBeReachable: false
+buildSpeed: 0s
+addActionCooldownTime: 15s
+
+
+[hiddenAction_ALLTAG]
+autoTriggerOnEvent: created
+temporarilyAddTags: ALL
+
+[action_Retreat]
+buildSpeed: 0s
+text: Retreat
+ai_isHighPriority: if self.hp(lessThan=${core.maxHp * 0.55})
+isVisible: if not self.tags(includes='aibuilder')
+addWaypoint_type: follow
+addWaypoint_target_nearestUnit_tagged: fallback
+addWaypoint_target_nearestUnit_team: own
+clearAllWaypoints: true
+addActionCooldownTime: 5s
+
+[action_AiStrongRetreat]
+text: retreat (AI)
+isVisible: if not self.tags(includes='aibuilder') and self.isControlledByAI()
+ai_isHighPriority: if numberOfUnitsInEnemyTeam(withtag='strong', withinRange=400, greaterThan=0) and not self.hasUnitInTeam(withinRange=400, greaterThan=2)
+alsoQueueAction: Retreat
+
+[action_DEFENDER]
+text: AI Defender
+buildSpeed: 0s
+description: Assign Unit to Defend Base
+isVisible: if self.isControlledByAI() and not self.tags(includes='defMe') and not self.tags(includes='turret') and not self.tags(includes='hint') and not numberOfUnitsInTeam(withinRange=150, greaterThan=5)
+ai_isHighPriority: if numberOfUnitsInTeam(withTag='Defender', lessThan=5, withinRange=400) and self.hp(full=true) and not numberOfUnitsInEnemyTeam(withinRange=300, greaterThan=2) and self.timeAlive(laterThanSeconds=10)
+ai_isDisabled: if self.tags(includes='defMe')
+temporarilyAddTags: Defender
+
+[action_TOOMANYDEFENDER]
+text: AI No Defender
+buildSpeed: 0s
+description: unAssign Unit to Defend Base (To many Defenders [5])
+isVisible: if self.isControlledByAI() and not self.tags(includes='defMe') and not self.tags(includes='turret') and self.tags(includes='defender')
+ai_isHighPriority: if numberOfUnitsInTeam(withTag='Defender', greaterThan=4, withinRange=400) and not numberOfUnitsInEnemyTeam(withinRange=300, greaterThan=3)
+temporarilyRemoveTags: Defender
+
+[action_Defend]
+buildSpeed: 0s
+text: Defend
+#autoTrigger: if self.tags(includes='Defender') and not self.hasActiveWaypoint(type='follow')
+isVisible: if self.tags(includes='Defender')
+addWaypoint_type: follow
+clearAllWaypoints: true
+
+addWaypoint_target_randomUnit_tagged: defme
+addWaypoint_target_randomUnit_team: own
+addWaypoint_target_randomUnit_maxRange: 500
+addActionCooldownTime: 10s
