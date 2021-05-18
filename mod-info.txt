@@ -5,7 +5,3 @@ description: AEA Mod Pack beta edition, open for public testing. Updates will be
 tags: Units
 
 thumbnail: mod-thumbnail-beta.png
-
-[music]
-sourceFolder: music/
-whenUsingUnitsFromThisMod_playExclusively: true
