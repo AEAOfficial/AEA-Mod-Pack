@@ -1,0 +1,45 @@
+
+[effect_muzzleSmoke]
+life: 50
+lifeRandom: 10
+alsoEmitEffects: CUSTOM:muzzleSmoke2*3
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+dirSpeedRandom: 0.2
+
+[effect_muzzleSmoke2]
+life: 50
+lifeRandom: 10
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+dirSpeedRandom: 0.2
+
+[effect_muzzleFlame]
+priority: high
+image:ROOT:shared/flame.png
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFramePingPong: true
+animateFrameSpeed: 0.75
+life: 12
+fadeOut: true
+attachedToUnit: true
+color: #FFFFFF
+scaleFrom: 0.8
+scaleTo: 1.2
+alpha: 1.6
+drawUnderUnits:false
+liveAfterAttachedDies: false
+physics: false
+hSpeed: 0.01

@@ -1,0 +1,57 @@
+[core]
+name: p_chainLightning_${number}
+
+copyFrom: weapon.template
+
+mass: 0
+price: 0
+maxHp: 1
+radius: 0
+canNotBeDamaged: true
+canNotBeDirectlyAttacked: true
+isUnselectable: true
+
+[graphics]
+image: invisible.png
+
+[attack]
+turretSize: 0
+turretTurnSpeed: 360
+turretMultiTargeting: true
+
+[movement]
+movementType: NONE
+
+[template_ChainTurret]
+@copyFromSection: template_turret
+x: 0
+y: 0
+turnSpeedAcceleration: 100
+limitingAngle: 45
+limitingMinRange: 20
+warmup: 10
+delay: 999
+turnSpeed: 360
+projectile: lightning2
+
+
+[turret_fire_1]
+@copyFromSection: template_ChainTurret
+idleDir: 0
+
+[turret_fire_2]
+@copyFromSection: template_ChainTurret
+idleDir: 90
+
+[turret_fire_3]
+@copyFromSection: template_ChainTurret
+idleDir: 180
+
+[turret_fire_4]
+@copyFromSection: template_ChainTurret
+idleDir: 270
+
+
+[hiddenAction_delete]
+autoTrigger: if self.timeAlive(laterThanSeconds=3)
+deleteSelf: true

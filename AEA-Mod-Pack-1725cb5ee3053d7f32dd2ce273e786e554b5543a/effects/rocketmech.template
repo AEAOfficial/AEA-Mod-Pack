@@ -1,0 +1,281 @@
+
+# ROCKET MECH                       ############################################################
+
+
+
+[effect_backblast]
+frameIndex: 0
+stripIndex: effects
+spawnChance: 1
+priority: verylow
+createWhenZoomedOut: false
+life: 60
+fadeOut: true
+attachedToUnit: false
+#color: #fdc14d
+color: #FFFFFF
+fadeInTime:10
+scaleFrom: 0.25
+scaleTo: 1.25
+alpha: 0.65
+drawUnderUnits:false
+liveAfterAttachedDies: false
+hSpeed: 0.01
+dirOffsetRandom:180
+ySpeedRelative: -0.7
+ySpeedRelativeRandom: 0.05
+xSpeedRelativeRandom: 0.25
+yOffsetRelative: -15
+atmospheric: true
+
+
+
+
+[effect_powerFlashLightReverse]
+priority:verylow
+image: SHARED:light_50.png
+life: 40
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+hOffset: 5
+hSpeed: -0.2
+dirSpeed: 5
+fadeInTime: 3
+scaleFrom: 0
+scaleTo: 2
+alpha: 1.1
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+
+
+
+[effect_powerAura4]
+priority:low
+image:ROOT:shared/energy.png
+life: 380
+fadeOut: true
+attachedToUnit: true
+color: #FFFFFF
+dirSpeed: -0.75
+fadeInTime: 40
+scaleFrom: 0.85
+scaleTo: 1
+alpha: 0.4
+drawUnderUnits:true
+liveAfterAttachedDies: false
+
+
+
+
+[effect_sparks]
+attachedToUnit: true
+life: 55
+physics: true
+xSpeedRelativeRandom: 1.6
+ySpeedRelativeRandom: 1.6
+hSpeed: -0.2
+hOffset: 2
+dirSpeedRandom: 5
+atmospheric: true
+image:ROOT:shared/energy_spark.png
+scaleFrom: 0.2
+scaleTo: 0.5
+physicsGravity: -0.2
+color: #FFFFFF
+priority: verylow
+
+
+
+
+[effect_powerFlash]
+priority:high
+frameIndex: 0
+stripIndex: shockwave
+life: 40
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+hSpeed: 0.1
+dirSpeed: 5
+fadeInTime: 0
+scaleFrom: 0
+scaleTo: 3
+alpha: 1.5
+drawUnderUnits:true
+liveAfterAttachedDies: true
+
+
+
+
+
+[effect_powerFlash2]
+priority:low
+frameIndex: 0
+stripIndex: shockwave
+life: 30
+fadeOut: true
+attachedToUnit: true
+color: #FF8888
+hSpeed: -0.1
+hOffset: 5
+dirSpeed: 5
+fadeInTime: 0
+scaleFrom: 0
+scaleTo: 1.3
+alpha: 1
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+
+
+
+
+[effect_powerAura3]
+priority:high
+image:ROOT:shared/energy.png
+life: 380
+fadeOut: true
+attachedToUnit: true
+color: #FFFFFF
+dirSpeed: 1.5
+fadeInTime: 40
+scaleFrom: 0.85
+scaleTo: 1
+alpha: 0.4
+drawUnderUnits:true
+liveAfterAttachedDies: false
+
+
+
+
+[effect_powerAuraLight]
+priority:verylow
+image: SHARED:light_50.png
+life: 380
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+dirSpeed: 2
+fadeInTime: 20
+scaleFrom: 1
+scaleTo: 2
+alpha: 0.5
+drawUnderUnits:false
+liveAfterAttachedDies: false
+
+
+
+
+
+[effect_powerFlashLight]
+priority:verylow
+image: SHARED:light_50.png
+life: 40
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+dirSpeed: 5
+fadeInTime: 0
+scaleFrom: 0
+scaleTo: 1.8
+alpha: 1.5
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+
+
+
+
+
+[effect_powerFlashReverse]
+priority:low
+frameIndex: 0
+stripIndex: shockwave
+life: 40
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+hOffset: 5
+hSpeed: -0.2
+dirSpeed: 5
+fadeInTime: 5
+scaleFrom: 2.2
+scaleTo: 0
+alpha: 1.1
+drawUnderUnits:true
+liveAfterAttachedDies: true
+
+
+
+
+
+
+[effect_nadeFlashLight]
+priority:low
+image: SHARED:light_50.png
+life: 15
+fadeOut: true
+attachedToUnit: true
+color: #FF5555
+fadeInTime: 0
+scaleFrom: 0
+scaleTo: 0.9
+alpha: 1.5
+drawUnderUnits:false
+liveAfterAttachedDies: false
+delayedStartTimer: 5
+hOffset: 2
+
+
+
+
+
+
+[effect_nade]
+priority:veryhigh
+image:ROOT:shared/shell.png
+imageShadow:SHADOW:ROOT:shared/shell.png
+life: 120
+fadeOut: true
+attachedToUnit: true
+#color: #fdc14d
+color: #FFFFFF
+shadow:true
+fadeInTime: 0
+scaleFrom: 0.7
+scaleTo: 0.7
+alpha: 1.5
+drawUnderUnits:false
+liveAfterAttachedDies: false
+dirSpeedRandom: 6
+hOffset: 2
+
+
+
+
+
+
+
+
+
+
+
+
+[effect_nadeFlash]
+priority:low
+frameIndex: 0
+stripIndex: shockwave
+life: 20
+fadeOut: true
+attachedToUnit: true
+color: #FF3333
+fadeInTime: 0
+scaleFrom: 0
+scaleTo: 0.9
+alpha: 1.5
+drawUnderUnits:false
+liveAfterAttachedDies: false
+delayedStartTimer: 5
+hOffset: 2

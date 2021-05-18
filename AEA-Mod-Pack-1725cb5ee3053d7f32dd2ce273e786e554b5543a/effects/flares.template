@@ -1,0 +1,112 @@
+[effect_missileFlare1]
+life: 10
+lifeRandom: 5
+spawnChance: 0.25
+alwayStartDirAtZero: true
+ifSpawnFailsEmitEffects: CUSTOM:missileFlare2
+image: ROOT:shared/yellow_flare.png
+yOffsetRelative: -3.5
+@define missileFlareSize: 0.1
+scaleFrom: ${missileFlareSize}
+scaleTo: ${missileFlareSize}
+
+
+[effect_falre]
+life: 10
+lifeRandom: 5
+spawnChance: 0.25
+alwayStartDirAtZero: true
+#ifSpawnFailsEmitEffects: CUSTOM:missileFlare2
+image: ROOT:shared/yellow_flare.png
+yOffsetRelative: -3.5
+@define missileFlareSize: 0.15
+scaleFrom: ${missileFlareSize}
+scaleTo: ${missileFlareSize}
+color: #3377FF
+alpha: 1
+
+[effect_missileFlare2]
+ifSpawnFailsEmitEffects: CUSTOM:missileFlare3
+@copyFromSection: effect_missileFlare1
+@define missileFlareSize: 0.15
+
+[effect_missileFlare3]
+ifSpawnFailsEmitEffects: CUSTOM:missileFlare4
+@copyFromSection: effect_missileFlare1
+@define missileFlareSize: 0.2
+
+[effect_missileFlare4]
+@copyFromSection: effect_missileFlare1
+@define missileFlareSize: 0.25
+
+[effect_plasmaFlare]
+life: 10
+lifeRandom: 5
+alwayStartDirAtZero: true
+image: ROOT:shared/flareBlue.png
+scaleFrom: 0.25
+scaleTo: 0.25
+
+[effect_redFlare]
+life: 10
+lifeRandom: 5
+alwayStartDirAtZero: true
+image: ROOT:shared/flareRed.png
+scaleFrom: 0.25
+scaleTo: 0.25
+
+[effect_mineFlare]
+life: 10
+lifeRandom: 5
+alwayStartDirAtZero: true
+image: ROOT:shared/flareRed.png
+scaleFrom: 0.25
+scaleTo: 0.25
+showInFog: true
+
+[effect_redCircleFlare]
+life: 10
+lifeRandom: 5
+alwayStartDirAtZero: true
+image: ROOT:shared/flareCircleRed.png
+scaleFrom: 0.75
+scaleTo: 0.75
+
+[effect_smallEnergeticSpark]
+life: 15
+
+scaleFrom: 0.75
+scaleTo: 0.75
+
+attachedToUnit: false
+atmospheric: true
+
+image:ROOT:shared/energeticSpark2.png
+
+total_frames: 9
+
+animateFrameStart: 0
+animateFrameEnd: 8
+#animateFramePingPong: true
+animateFrameSpeed: 0.75
+
+[effect_energeticSparkGreen]
+life: 15
+
+scaleFrom: 0.75
+scaleTo: 0.75
+
+attachedToUnit: false
+atmospheric: true
+
+image:ROOT:shared/energeticSparkGreen.png
+
+total_frames: 9
+
+dirOffsetRandom: 180
+
+animateFrameStart: 0
+animateFrameEnd: 8
+#animateFramePingPong: true
+animateFrameSpeed: 0.75
+

@@ -1,0 +1,174 @@
+
+[effect_yellowHealing]
+priority:veryhigh
+image:ROOT:shared/shockwave_large.png
+life: 30
+fadeOut: true
+attachedToUnit: true
+color:#32cc32
+fadeInTime: 0
+scaleFrom: 1
+scaleTo: 4.7
+alpha:  0.2
+dirSpeedRandom: 30
+drawUnderUnits: true
+
+
+
+
+
+[effect_healSparksYellow]
+attachedToUnit: true
+life: 100
+xOffsetRelativeRandom: 8
+yOffsetRelativeRandom: 8
+xSpeedRelativeRandom: 2
+ySpeedRelativeRandom: 2
+hSpeed: 0.2
+dirSpeedRandom: 1
+fadeInTime: 10
+image: ROOT:shared/nanoSparksYellow.png
+scaleFrom: 0.5
+scaleTo: 1
+#color: #BFFF00
+color:#32cc32
+priority: high
+
+
+
+
+
+
+[effect_healBodyLightYellow]
+image: SHARED:light_50.png
+life: 50
+fadeOut: true
+fadeInTime: 1
+attachedToUnit: true
+color: #BFFF00
+drawUnderUnits: false
+scaleFrom: 0
+scaleTo: 10.1
+priority: low
+alpha: 0.2
+drawUnderUnits: true
+
+
+
+
+
+
+
+
+
+[effect_areaHeal]
+life: 100
+priority: veryhigh
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+scaleFrom: 0.25
+scaleTo: 6
+fadeInTime: 1
+fadeOut: true
+attachedToUnit: false
+image: ROOT:shared/areaShock.png
+drawUnderUnits: true
+alpha:1
+
+
+
+
+
+[effect_healLights]
+life: 180
+priority: low
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 0.05
+scaleFrom: 0.7
+scaleTo: 0.71
+delayedStartTimer: 20
+fadeInTime: 40
+fadeOut: true
+attachedToUnit: false
+image: ROOT:shared/nanoLights.png
+drawUnderUnits: true
+alpha:3
+
+
+
+[effect_healSparks]
+attachedToUnit: true
+life: 100
+xOffsetRelativeRandom: 8
+yOffsetRelativeRandom: 8
+xSpeedRelativeRandom: 2
+ySpeedRelativeRandom: 2
+hSpeed: 0.2
+dirSpeedRandom: 1
+fadeInTime: 10
+image: ROOT:shared/nanoSparks.png
+scaleFrom: 0.5
+scaleTo: 0.4
+color: #FFFFFF
+priority: high
+
+
+
+
+
+
+[effect_healBodyLight]
+image: SHARED:light_50.png
+life: 50
+fadeOut: true
+fadeInTime: 1
+attachedToUnit: true
+color: #11ff11
+drawUnderUnits: false
+scaleFrom: 0
+scaleTo: 8
+priority: low
+alpha: 0.5
+
+
+
+
+[effect_powerAura]
+priority:high
+image: ROOT:shared/aura.png
+life: 380
+fadeOut: true
+attachedToUnit: true
+color: #FFFFFF
+dirSpeed: 1.5
+fadeInTime: 40
+scaleFrom: 1.3
+scaleTo: 1.4
+alpha: 0.4
+drawUnderUnits:true
+liveAfterAttachedDies: false
+
+
+
+
+[effect_powerAura2]
+priority:low
+image: ROOT:shared/aura.png
+life: 380
+fadeOut: true
+attachedToUnit: true
+color: #FFFFFF
+dirSpeed: -0.75
+fadeInTime: 40
+scaleFrom: 1.3
+scaleTo: 1.4
+alpha: 0.4
+drawUnderUnits:true
+liveAfterAttachedDies: false
+

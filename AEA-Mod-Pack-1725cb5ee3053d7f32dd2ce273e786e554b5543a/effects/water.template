@@ -1,0 +1,81 @@
+
+[effect_wave]
+life:150
+image: ROOT:shared/shockwave.png
+scaleFrom: 0
+scaleTo: 0.8
+createWhenOverLand: false
+
+[effect_waterSplash]
+life:0
+alsoEmitEffects: CUSTOM:wave, CUSTOM:waterSplash1, CUSTOM:waterSplash2, CUSTOM:waterSplash3, CUSTOM:waterSplash4*3, CUSTOM:waterSplash5*5
+
+[effect_waterSplash1]
+life: 100
+image: ROOT:shared/bubbles.png
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+xSpeedAbsolute: 0.1
+xSpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: 3
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:shared/bubbles.png
+shadow: true
+
+[effect_waterSplash2]
+life: 100
+image: ROOT:shared/bubbles.png
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: -3
+dirOffset:135
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:shared/bubbles.png
+shadow: true
+
+[effect_waterSplash3]
+life: 100
+image: ROOT:shared/bubbles.png
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: -3
+xOffsetRelativeRandom: 0
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:shared/bubbles.png
+shadow: true
+
+[effect_waterSplash4]
+life: 100
+image: ROOT:shared/bubbles.png
+scaleFrom: 0.4
+scaleTo: 1.2
+physics: true
+physicsGravity: 0.4
+hSpeed: 1
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:shared/bubbles.png
+shadow: true
+
+[effect_waterSplash5]
+life: 100
+image: ROOT:shared/bubbles.png
+scaleFrom: 0.4
+scaleTo: 1.2
+physics: true
+physicsGravity: 0.4
+hSpeed: 1.5
+hSpeedRandom: 0.75
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:shared/bubbles.png
+shadow: true

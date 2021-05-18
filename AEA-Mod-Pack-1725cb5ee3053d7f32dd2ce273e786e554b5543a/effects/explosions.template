@@ -1,0 +1,458 @@
+
+[effect_smallLightGround]
+life:10
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 0.6
+scaleTo: 0.6
+color:#ffd500
+
+
+
+[effect_lightGround]
+life:15
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 1
+scaleTo: 1
+color:#ffd500
+
+
+
+
+
+
+
+
+
+[effect_missileShockwave]
+life: 60
+frameIndex: 0
+stripIndex: shockwave
+priority: high
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+scaleFrom: 0.15
+scaleTo: 0.6
+fadeInTime: 1
+fadeOut: true
+attachedToUnit: true
+alpha:0.3
+
+[effect_missileShockwaveBlue]
+life: 600
+frameIndex: 0
+stripIndex: shockwave
+priority: high
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+scaleFrom: 0.15
+scaleTo: 4
+fadeInTime: 1
+fadeOut: true
+attachedToUnit: true
+alpha:1
+
+color: #3377FF
+
+[effect_radialExplosionWater]
+life: 35
+drawUnderUnits: true
+image: ROOT:shared/shockwave2.png
+scaleFrom: 1
+scaleTo: 1
+fadeOut: true
+color:#BFEEF5
+createWhenOverLand: false
+alsoEmitEffects: CUSTOM|radialExplosionWater2
+atmospheric: true
+
+
+
+[effect_radialExplosionWater2]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave2.png
+scaleFrom: 1
+scaleTo: 1.6
+fadeOut: true
+color:#BFEEF5
+createWhenOverLand: false
+atmospheric: true
+
+
+
+[effect_shockWave]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave.png
+scaleFrom: 1
+scaleTo: 2.5
+fadeOut: true
+
+
+
+[effect_bigshockWave]
+life: 25
+drawUnderUnits: true
+image: ROOT:shared/shockwave.png
+scaleFrom: 1
+scaleTo: 5.5
+fadeOut: true
+
+[effect_dirt]
+life: 120
+lifeRandom: 30
+alsoEmitEffects: CUSTOM:dirt2*3
+image: ROOT:shared/dirt.png
+physics: true
+physicsGravity: 0.5
+hSpeed:2
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.5
+xSpeedRelativeRandom: 0.5
+
+
+[effect_explosionShockwaveRocket]
+priority:low
+image:ROOT:shared/shockwave_large.png
+life: 30
+fadeOut: true
+attachedToUnit: true
+color: #fff7e0
+fadeInTime: 0
+scaleFrom: 0.3
+scaleTo: 1.2
+alpha: 1.2
+dirSpeedRandom: 30
+
+
+
+
+[effect_explosionMain]
+life: 30
+alsoEmitEffects: CUSTOM:explosionSmall
+priority: high
+alsoPlaySound: missile_hit:0.65
+xOffsetRelative: 0
+yOffsetRelative: 0
+dirOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+fadeInTime: 0
+fadeOut: true
+attachedToUnit: false
+scaleFrom: 1.2
+scaleTo: 2.1
+image:ROOT:shared/explode_big.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.65
+animateFrameSpeedRandom: 0.1
+alpha:1
+
+
+
+
+
+
+[effect_explosionSmall]
+life: 30
+priority:low
+xOffsetRelativeRandom: 1
+yOffsetRelativeRandom: 1
+hOffset: 1
+dirOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+fadeInTime: 0
+fadeOut: true
+attachedToUnit: false
+scaleFrom: 1.1
+scaleTo: 1.2
+image:ROOT:shared/explode_big.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.8
+alpha:0.7
+
+
+
+
+
+
+
+
+[effect_explosionMainPower]
+life: 30
+alsoEmitEffects: CUSTOM:explosionSmallPower
+priority: high
+color: #ffc7c7
+alsoPlaySound: missile_hit:0.65
+xOffsetRelative: 0
+yOffsetRelative: 0
+hOffset: 0
+dirOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+fadeInTime: 0
+fadeOut: true
+attachedToUnit: false
+scaleFrom: 1.2
+scaleTo: 2.1
+image:ROOT:shared/explode_big.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.65
+animateFrameSpeedRandom: 0.1
+alpha:0.7
+
+
+
+
+
+
+
+
+[effect_explosionSmallPower]
+life: 30
+priority:low
+xOffsetRelativeRandom: 1
+yOffsetRelativeRandom: 1
+hOffset: 1
+dirOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+color: #ffc7c7
+fadeInTime: 0
+fadeOut: true
+attachedToUnit: false
+scaleFrom: 1.1
+scaleTo: 1.2
+image:ROOT:shared/explode_big.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.55
+alpha:0.8
+
+
+
+
+
+
+
+
+
+
+[effect_explosionMainRocket]
+life: 30
+priority: high
+alsoPlaySound: missile_hit:0.65
+xOffsetRelative: 0
+yOffsetRelative: 0
+dirOffset: 0
+dirOffsetRandom:180
+dirSpeedRandom: 1
+fadeInTime: 0
+fadeOut: true
+attachedToUnit: false
+scaleFrom: 1.2
+scaleTo: 1.8
+image:ROOT:shared/explode_big.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.65
+animateFrameSpeedRandom: 0.1
+alpha:1
+
+
+
+
+
+
+
+[effect_explosionLight]
+priority:low
+image:SHARED:light_50.png
+life: 35
+fadeOut: true
+attachedToUnit: true
+color: #ffd488
+fadeInTime: 2
+scaleFrom: 2.5
+scaleTo: 0.4
+alpha: 0.6
+dirSpeedRandom: 30
+
+
+
+
+
+
+
+
+
+
+
+[effect_explosionLightPower]
+priority:low
+image:SHARED:light_50.png
+life: 40
+fadeOut: true
+attachedToUnit: true
+color: #ff8470
+fadeInTime: 2
+scaleFrom: 2.6
+scaleTo: 0.4
+alpha: 0.9
+dirSpeedRandom: 30
+
+
+
+
+
+
+
+
+[effect_explosionShockwavePower]
+priority:low
+image:ROOT:shared/shockwave_large.png
+life: 30
+fadeOut: true
+attachedToUnit: true
+color: #ffc2c2
+fadeInTime: 0
+scaleFrom: 0.25
+scaleTo: 1.3
+alpha: 1.2
+dirSpeedRandom: 30
+drawUnderUnits: true
+
+
+
+
+
+
+
+
+
+
+[effect_explosionShockwave]
+priority:low
+image:ROOT:shared/shockwave_large.png
+life: 30
+fadeOut: true
+attachedToUnit: true
+color: #fff7e0
+fadeInTime: 0
+scaleFrom: 0.3
+scaleTo: 1.3
+alpha: 1.2
+dirSpeedRandom: 30
+drawUnderUnits: true
+
+
+
+
+
+[effect_dirt2]
+life: 120
+lifeRandom: 30
+image: ROOT:shared/dirt.png
+physics: true
+physicsGravity: 0.5
+hSpeed:2
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.5
+xSpeedRelativeRandom: 0.5
+
+
+
+
+[effect_dirtySmoke]
+life: 100
+lifeRandom: 30
+alsoEmitEffects: CUSTOM:dirtySmoke2*3
+attachedToUnit: false
+image: ROOT:shared/dirtySmoke.png
+scaleFrom: 2
+scaleTo: 3
+alpha: 0.6
+ySpeedRelativeRandom: 0.15
+xSpeedRelativeRandom: 0.15
+dirSpeedRandom: 0.2
+hSpeed: 1
+hSpeedRandom: 0.25
+atmospheric: true
+physics: true
+physicsGravity: 0.25
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true
+
+
+
+
+
+[effect_dirtySmoke2]
+life: 100
+lifeRandom: 30
+attachedToUnit: false
+image: ROOT:shared/dirtySmoke.png
+scaleFrom: 2
+scaleTo: 3
+alpha: 0.6
+ySpeedRelativeRandom: 0.15
+xSpeedRelativeRandom: 0.15
+dirSpeedRandom: 0.2
+hSpeed: 1
+hSpeedRandom: 0.25
+atmospheric: true
+physics: true
+physicsGravity: 0.25
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true
+
+
+
+
+
+[effect_dirtyExplosion]
+life:0
+alsoEmitEffects: CUSTOM:lightGround, CUSTOM:dirt, CUSTOM:dirtySmoke, smallExplosion
+createWhenOverLiquid: false
+
+
+
+
+
+
+[effect_smallYellowExplosion]
+life: 15
+scaleFrom: 0.75
+scaleTo: 0.75
+attachedToUnit: false
+atmospheric: true
+image:ROOT:shared/energeticSpark2.png
+total_frames: 14
+dirOffsetRandom: 180
+animateFrameStart: 0
+animateFrameEnd: 13
+#animateFramePingPong: true
+animateFrameSpeed: 0.5
+

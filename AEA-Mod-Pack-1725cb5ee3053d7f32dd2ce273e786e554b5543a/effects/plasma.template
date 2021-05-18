@@ -1,0 +1,97 @@
+
+[effect_smallPlasmaFlame]
+life: 20
+alsoEmitEffects: CUSTOM:smallLightGroundPlasma
+
+attachedToUnit: true
+atmospheric: true
+
+image:ROOT:shared/plasma_flame.png
+
+total_frames: 5
+
+animateFrameStart: 0
+animateFrameEnd: 3
+#animateFramePingPong: true
+animateFrameSpeed: 0.5
+
+alpha:1
+scaleFrom: 0.8
+scaleTo: 0.8
+
+[effect_plasmaFlame]
+life: 20
+alsoEmitEffects: CUSTOM:lightGroundPlasma
+
+attachedToUnit: true
+atmospheric: true
+
+image:ROOT:shared/plasma_flame.png
+
+total_frames: 5
+
+animateFrameStart: 0
+animateFrameEnd: 3
+#animateFramePingPong: true
+animateFrameSpeed: 0.5
+
+alpha:1
+scaleFrom: 1
+scaleTo: 1
+
+[effect_largePlasmaFlame]
+life: 20
+alsoEmitEffects: CUSTOM:lightGroundPlasma
+
+attachedToUnit: true
+atmospheric: true
+
+image:ROOT:shared/plasma_flame.png
+
+total_frames: 5
+
+animateFrameStart: 0
+animateFrameEnd: 3
+#animateFramePingPong: true
+animateFrameSpeed: 0.5
+
+alpha:1
+scaleFrom: 1.25
+scaleTo: 1.25
+
+[effect_smallLightGroundPlasma]
+life:10
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 0.6
+scaleTo: 0.6
+alpha: 1
+color:#badbec
+
+[effect_lightGroundPlasma]
+life:10
+drawUnderUnits: true
+image: SHARED:light_50.png
+scaleFrom: 1
+scaleTo: 1
+alpha: 1
+color:#badbec
+
+[effect_bits]
+life: 160
+lifeRandom: 40
+spawnChance: 0.5
+attachedToUnit: false
+scaleFrom: 0.85
+scaleTo: 0.85
+image: ROOT:shared/explode_bits.png
+total_frames: 10
+frameIndexRandom: 9
+physics: true
+physicsGravity: 1
+hSpeed: 1.5
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.5
+xSpeedRelativeRandom: 0.5
+imageShadow: SHADOW:ROOT:shared/explode_bits.png
+shadow: true

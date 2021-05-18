@@ -1,0 +1,134 @@
+[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits:   true
+canAttackUnderwaterUnits: false
+
+turretSize: 20
+turretTurnSpeed: 4
+maxAttackRange: 190
+
+[projectile_lightning]
+#@define damage: 999999
+#directDamage: 1250
+
+@define damage: 350
+directDamage: ${int(damage/(1+number))}
+
+life: 20
+instant: true
+lightingEffect: true
+largeHitEffect: true
+laserEffect: false
+
+
+
+
+
+wobbleAmplitude: 12
+wobbleFrequency: 1
+spawnProjectilesOnCreate: lightning
+shieldDamageMultiplier: 2
+shieldDefectionMultiplier: 0
+
+buildingDamageMultiplier: 0.4
+
+explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
+
+
+explodeEffectOnShield:CUSTOM:lightningShock*1, CUSTOM:hitLightFlash
+
+spawnUnit: p_chainLightning_${number+1}(offsetRandomDir=360)
+
+
+[projectile_lightning2]
+#@define damage: 999999
+#directDamage: 1250
+
+@define damage: 350
+directDamage: ${int(damage/(1+number))}
+
+life: 20
+instant: true
+lightingEffect: true
+largeHitEffect: true
+
+wobbleAmplitude: 12
+wobbleFrequency: 1
+shieldDamageMultiplier: 1.5
+shieldDefectionMultiplier: 0.1
+
+buildingDamageMultiplier: 0.5
+
+explodeEffect:CUSTOM:lightningShock, CUSTOM:sparks*8
+
+
+explodeEffectOnShield:CUSTOM:lightningShock*1, CUSTOM:hitLightFlash
+
+
+[template_turret]
+turnSpeed: 0
+turnSpeedAcceleration: 0
+shoot_flame:CUSTOM:sparks2*3
+shoot_light:#FFcceeee
+
+canShoot: true
+
+
+[effect_hitLightFlash]
+priority:high
+
+image: SHARED:light_50.png
+life: 17
+fadeOut: true
+attachedToUnit: false
+color: #63e6e8
+
+scaleFrom: 1.8
+scaleTo: 1.8
+alpha: 0.6
+drawUnderUnits:false
+
+
+[effect_lightningShock]
+life: 60
+
+
+
+hOffset: 0
+dirOffset: 0
+
+fadeInTime: 0
+fadeOut: false
+
+attachedToUnit: true
+
+
+image: SHARED:lightning_shock.png
+total_frames: 14
+animateFrameStart: 0
+animateFrameEnd: 13
+animateFramePingPong: false
+animateFrameSpeed: 0.5
+
+
+
+[effect_sparks]
+attachedToUnit: false
+life: 150
+physics: true
+xSpeedRelativeRandom: 1.6
+ySpeedRelativeRandom: 1.6
+hSpeed: 2
+image: SHARED:spark.png
+priority: verylow
+
+[effect_sparks2]
+attachedToUnit: false
+life: 150
+physics: true
+xSpeedRelativeRandom: 0.5
+ySpeedRelativeRandom: 0.5
+hSpeed: 1
+image: SHARED:spark.png
+priority: verylow

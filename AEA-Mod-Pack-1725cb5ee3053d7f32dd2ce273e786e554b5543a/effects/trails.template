@@ -1,0 +1,217 @@
+
+[effect_projectileSmoke]
+life: 50
+lifeRandom: 10
+attachedToUnit: false
+image: ROOT:shared/smoke.png
+scaleFrom: 0.8
+scaleTo: 0.6
+alpha: 0.6
+ySpeedRelativeRandom: 0.1
+xSpeedRelativeRandom: 0.1
+dirSpeedRandom: 0.2
+imageShadow: SHADOW:ROOT:shared/smoke.png
+shadow: true
+
+
+
+
+[effect_nadeTrail]
+priority:low
+image: SHARED:light_50.png
+life: 20
+fadeOut: true
+attachedToUnit: false
+color: #FF5555
+shadow:false
+fadeInTime: 2
+scaleFrom: 0.3
+scaleTo: 0
+alpha: 0.75
+drawUnderUnits:false
+liveAfterAttachedDies: true
+dirSpeedRandom: 2
+hOffset: 2
+
+
+[effect_trailDropship]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.52
+scaleTo:0.52
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailDropship2]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -25
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.35
+scaleTo:0.35
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailMAE]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+
+yOffsetRelative: -12
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.30
+scaleTo:0.30
+alpha: 0.25
+drawUnderUnits: true
+liveAfterAttachedDies: true
+atmospheric: true
+
+[effect_trailPhantom]
+priority:low
+image:ROOT:shared/S-1trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+
+yOffsetRelative: -12
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.35
+scaleTo:0.35
+alpha: 0.25
+drawUnderUnits: true
+liveAfterAttachedDies: true
+atmospheric: true
+
+[effect_trails2]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.52
+scaleTo:0.52
+alpha: 0.35
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+[effect_trailGrand]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -2
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.70
+scaleTo:0.70
+alpha: 0.35
+drawUnderUnits:true
+liveAfterAttachedDies: true
+
+[effect_thrustGrand]
+priority:low
+image:ROOT:shared/jet.png
+life: 5
+fadeOut: true
+attachedToUnit: false
+
+yOffsetRelative: -10
+xOffsetRelative: -15
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.05
+scaleTo:0.05
+alpha: 1
+drawUnderUnits:false
+liveAfterAttachedDies: true
+color: #FF4500
+
+[effect_trailbomber]
+priority:low
+image:ROOT:shared/S-2trail.png
+life: 45
+fadeOut: true
+attachedToUnit: false
+
+shadow:false
+fadeInTime: 1
+scaleFrom: 0.45
+scaleTo:0.45
+alpha: 0.1
+drawUnderUnits:false
+liveAfterAttachedDies: true
+
+
+[effect_dustCloud]
+attachedToUnit: false
+life: 60
+xOffsetRelativeRandom: 2
+yOffsetRelativeRandom: 2
+dirOffsetRandom: 180
+xSpeedRelativeRandom: 0.3
+ySpeedRelativeRandom: 0.3
+hSpeed: 0
+hOffset: 3
+hOffsetRandom: 1
+dirSpeedRandom: 1
+fadeInTime: 3
+atmospheric: true
+delayedStartTimer: 10
+drawUnderUnits: true
+alpha: 0.9
+image:ROOT:shared/dust_cloud.png
+imageShadow:ROOT:shared/dust_cloud.png
+scaleFrom: 2
+scaleTo: 3.5
+color: #FFFFFF
+priority: low
+
+
+
+
+[effect_smoke]
+priority: low
+frameIndex: 0
+stripIndex: smoke_black
+createWhenZoomedOut: false
+life: 90
+fadeOut: true
+attachedToUnit: false
+color: #FFFFFF
+fadeInTime:1
+scaleFrom: 0.2
+scaleTo: 0.7
+alpha: 1
+drawUnderUnits:false
+liveAfterAttachedDies: false
+hSpeed:0.15
+hSpeedRandom: 0.05
+dirOffsetRandom:180
+dirSpeedRandom:5
+xSpeedRelativeRandom: 0.1
+ySpeedRelative: 0.1
+atmospheric: true

@@ -1,0 +1,320 @@
+[effect_smokeW]
+xOffsetRelative:18
+yOffsetRelative:5
+attachedToUnit: false
+life: 300
+alpha: 0.5
+scaleFrom:0.75
+scaleTo: 2.5
+#physics: true
+xSpeedRelativeRandom: 0.1
+ySpeedRelativeRandom: 0.1
+hSpeed: 0.1
+image:ROOT:shared/smokeC.png
+priority: critical
+drawUnderUnits:false
+atmospheric:true
+
+[effect_smokeW2]
+xOffsetRelative:5
+yOffsetRelative:-10
+attachedToUnit: false
+life: 300
+alpha: 0.4
+scaleFrom:1
+scaleTo: 3
+#physics: true
+xSpeedRelativeRandom: 0.1
+ySpeedRelativeRandom: 0.1
+hSpeed: 0.1
+image:ROOT:shared/smokeC.png
+priority: critical
+drawUnderUnits:false
+atmospheric:true
+
+#===============================================Turret Smoke
+[effect_BarrelSmokeFront]
+alsoEmitEffects: CUSTOM:BarrelSmokeFront2*2, CUSTOM:BarrelSmokeFront3, CUSTOM:BarrelSmokeFront4, CUSTOM:BarrelSmokeFront_I, CUSTOM:BarrelSmokeFront_II, CUSTOM:BarrelSmokeFront_III
+createWhenZoomedOut: false
+priority:low
+
+
+life: 20
+fadeOut: true
+attachedToUnit: false
+color: #CCCCFF
+fadeInTime:2
+scaleFrom: 0.75
+scaleTo: 1
+alpha: 0.7
+#drawUnderUnits:true
+
+ySpeedRelative:2.5
+xSpeedRelativeRandom:0.2
+
+xOffsetRelative: 0
+yOffsetRelative: 10
+
+atmospheric: true
+
+stripIndex:effects
+#stripIndex: smoke_black
+
+frameIndex: 0
+[effect_BarrelSmokeFront_I]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+color: #8b8bad
+delayedStartTimer: 5
+
+[effect_BarrelSmokeFront_II]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+color: #6f6f8b
+delayedStartTimer: 10
+[effect_BarrelSmokeFront_III]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+color: #606078
+delayedStartTimer: 15
+
+
+[effect_BarrelSmokeFront2]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 50
+alpha: 0.25
+#color: #525252
+scaleFrom: 1.4
+scaleTo: 3
+yOffsetRelative: 35
+ySpeedRelative:0.5
+xSpeedRelativeRandom:1
+delayedStartTimer: 20
+[effect_BarrelSmokeFront3]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 80
+alpha: 0.25
+#color: #525252
+scaleFrom: 1.4
+scaleTo: 2
+yOffsetRelative: 35
+ySpeedRelative:-0.5
+xSpeedRelativeRandom:0.5
+delayedStartTimer: 20
+[effect_BarrelSmokeFront4]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 100
+#color: #CCCCFF
+alpha: 0.25
+scaleFrom: 2
+scaleTo: 5
+yOffsetRelative: 35
+ySpeedRelative:1
+xSpeedRelativeRandom:0.5
+delayedStartTimer: 20
+#=======================================
+[effect_BarrelSmokeFront_End]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: CUSTOM:BarrelSmokeFront_End_2, CUSTOM:BarrelSmokeFront_End_3, CUSTOM:BarrelSmokeFront_End_4, CUSTOM:BarrelSmokeFront_End_I, CUSTOM:BarrelSmokeFront_End_II, CUSTOM:BarrelSmokeFront_End_III  
+life: 30
+scaleFrom: 0.75
+scaleTo: 1.75
+yOffsetRelative: 55
+
+[effect_BarrelSmokeFront_EndCooling]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: CUSTOM:BarrelSmokeFront_End_2, CUSTOM:BarrelSmokeFront_End_3, CUSTOM:BarrelSmokeFront_End_4, CUSTOM:BarrelSmokeFront_End_I, CUSTOM:BarrelSmokeFront_End_II, CUSTOM:BarrelSmokeFront_End_III, CUSTOM:BarrelSmokeFront_End_IV, CUSTOM:BarrelSmokeFront_End_V, CUSTOM:BarrelSmokeFront_End_VI, CUSTOM:BarrelSmokeFront_End_VII, CUSTOM:BarrelSmokeFront_End_VIII, CUSTOM:BarrelSmokeFront_End_IX, CUSTOM:BarrelSmokeFront_End_X, CUSTOM:BarrelSmokeFront_End_XI, CUSTOM:BarrelSmokeFront_End_XII                            
+life: 30
+scaleFrom: 0.75
+scaleTo: 1.75
+alpha: 0.10
+yOffsetRelative: 55
+[effect_BarrelSmokeFront_EndCoolingII]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: CUSTOM:BarrelSmokeFront_End_2, CUSTOM:BarrelSmokeFront_End_3, CUSTOM:BarrelSmokeFront_End_4, CUSTOM:BarrelSmokeFront_End_I, CUSTOM:BarrelSmokeFront_End_II, CUSTOM:BarrelSmokeFront_End_III, CUSTOM:BarrelSmokeFront_End_IV, CUSTOM:BarrelSmokeFront_End_V, CUSTOM:BarrelSmokeFront_End_VI, CUSTOM:BarrelSmokeFront_End_VII, CUSTOM:BarrelSmokeFront_End_VIII, CUSTOM:BarrelSmokeFront_End_IX, CUSTOM:BarrelSmokeFront_End_X, CUSTOM:BarrelSmokeFront_End_XI, CUSTOM:BarrelSmokeFront_End_XII, CUSTOM:BarrelSmokeFront_End_XIII, CUSTOM:BarrelSmokeFront_End_XIV, CUSTOM:BarrelSmokeFront_End_XV, CUSTOM:BarrelSmokeFront_End_XVI, CUSTOM:BarrelSmokeFront_End_XVII, CUSTOM:BarrelSmokeFront_End_XVIII, CUSTOM:BarrelSmokeFront_End_XIX, CUSTOM:BarrelSmokeFront_End_XX, CUSTOM:BarrelSmokeFront_End_XXI, CUSTOM:BarrelSmokeFront_End_XXII, CUSTOM:BarrelSmokeFront_End_XXIII, CUSTOM:BarrelSmokeFront_End_XXIV, CUSTOM:BarrelSmokeFront_End_XXV, CUSTOM:BarrelSmokeFront_End_XXVI, CUSTOM:BarrelSmokeFront_End_XXVII, CUSTOM:BarrelSmokeFront_End_XXVIII                              
+life: 30
+scaleFrom: 0.75
+scaleTo: 1.75
+alpha: 0.10
+yOffsetRelative: 55
+[effect_BarrelSmokeFront_End_I]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 5
+[effect_BarrelSmokeFront_End_II]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 10
+[effect_BarrelSmokeFront_End_III]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 15
+[effect_BarrelSmokeFront_End_IV]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 20
+[effect_BarrelSmokeFront_End_V]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 25
+[effect_BarrelSmokeFront_End_VI]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 30
+[effect_BarrelSmokeFront_End_VII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 35
+[effect_BarrelSmokeFront_End_VIII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 40
+[effect_BarrelSmokeFront_End_IX]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 45
+[effect_BarrelSmokeFront_End_X]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 50
+[effect_BarrelSmokeFront_End_XI]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 55
+[effect_BarrelSmokeFront_End_XII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 60
+[effect_BarrelSmokeFront_End_XIII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 65
+[effect_BarrelSmokeFront_End_XIV]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 70
+[effect_BarrelSmokeFront_End_XV]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 75
+[effect_BarrelSmokeFront_End_XVI]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 80
+[effect_BarrelSmokeFront_End_XVII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 85
+[effect_BarrelSmokeFront_End_XVIII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 90
+[effect_BarrelSmokeFront_End_XIX]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 95
+[effect_BarrelSmokeFront_End_XX]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 100
+[effect_BarrelSmokeFront_End_XXI]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 105
+[effect_BarrelSmokeFront_End_XXII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 110
+[effect_BarrelSmokeFront_End_XXIII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 115
+[effect_BarrelSmokeFront_End_XXIV]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 120
+[effect_BarrelSmokeFront_End_XXV]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 125
+[effect_BarrelSmokeFront_End_XXVI]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 130
+[effect_BarrelSmokeFront_End_XXVII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 135
+[effect_BarrelSmokeFront_End_XXVIII]
+@copyFromSection: effect_BarrelSmokeFront_End
+alsoEmitEffects: NONE
+delayedStartTimer: 140
+[effect_BarrelSmokeFront_End_2]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 50
+alpha: 0.25
+#color: #525252
+scaleFrom: 1.4
+scaleTo: 3
+yOffsetRelative:120
+ySpeedRelative:0.5
+xSpeedRelativeRandom:1
+delayedStartTimer: 20
+[effect_BarrelSmokeFront_End_3]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 80
+alpha: 0.25
+#color: #525252
+scaleFrom: 1.4
+scaleTo: 2
+yOffsetRelative: 120
+ySpeedRelative:-0.5
+xSpeedRelativeRandom:0.5
+delayedStartTimer: 20
+[effect_BarrelSmokeFront_End_4]
+@copyFromSection: effect_BarrelSmokeFront
+alsoEmitEffects: NONE
+life: 100
+#color: #CCCCFF
+alpha: 0.25
+scaleFrom: 2
+scaleTo: 5
+yOffsetRelative: 120
+ySpeedRelative:1
+xSpeedRelativeRandom:0.5
+delayedStartTimer: 20
+#==========================================
+[effect_ChargeSmoke_0]
+alsoEmitEffects: CUSTOM:ChargeSmoke_1
+
+spawnChance: 0.4
+xOffsetRelative:25
+yOffsetRelative:-90
+attachedToUnit: false
+life: 150
+alpha: 0.5
+scaleFrom:0.75
+scaleTo: 2.5
+#physics: true
+xSpeedRelativeRandom: 0.1
+ySpeedRelativeRandom: 0.1
+hSpeed: 0.1
+image:ROOT:shared/smokeC.png
+priority: critical
+drawUnderUnits:false
+atmospheric:true
+[effect_ChargeSmoke_1]
+@copyFromSection: effect_ChargeSmoke_0
+alsoEmitEffects: NONE
+spawnChance: 0.3
+life: 320
+scaleFrom:1
+scaleTo: 2.5
+alpha: 0.2
+xOffsetRelative:5
+yOffsetRelative:-65
