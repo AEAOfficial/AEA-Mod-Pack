@@ -28,23 +28,6 @@ displayColor:#C0C0C0
 
 #-------WAFFZ AI PRIORITIES STUFF------
 
-#Air Counter Attack
-[action_AirAttack]
-text: Air Raid!
-isVisible: if self.isControlledByAI()
-ai_isHighPriority: if self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=400, greaterThan=0)
-ai_isDisabled: if not self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=400, greaterThan=0)
-temporarilyAddTags: attackByAir
-
-#No More Air Units attacking
-[action_noAir]
-text: no more air
-isVisible: if self.isControlledByAI() and self.tags(includes='attackByAir')
-ai_isHighPriority: if numberOfUnitsInEnemyTeam(withTag='air', withinRange=400, lessThan=1) and self.tags(includes='attackByAir')
-temporarilyRemoveTags: attackByAir
-
-#--
-
 #DIFFUCTLY TEST (Used by some actions to tell what diffuctly the AI is on)
 [global_resource_DIFF]
 displayName: diff
@@ -81,7 +64,7 @@ addActionCooldownTime: 6s
 [action_AiStrongRetreat]
 text: retreat (AI)
 isVisible: false
-autoTrigger: if numberOfUnitsInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='build') or numberOfUnitsInEnemyTeam(withTag='antiair', withinRange=420, greaterThan=0) and self.isControlledByAI() and not self.hp(greaterThan=1000)
+autoTrigger: if self.hp(lessThan=${core.maxHp*0.5}) and self.isControlledByAI or numberOfUnitsInEnemyTeam(withTag='antiair', greaterThan=0, withinRange=420) and not numberOfUnitsInTeam(withTag='air', lessThan=5, withinRange=420)
 addWaypoint_type: move
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
