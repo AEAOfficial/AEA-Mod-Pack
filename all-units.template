@@ -81,7 +81,7 @@ addActionCooldownTime: 6s
 [action_AiStrongRetreat]
 text: retreat (AI)
 isVisible: false
-autoTrigger: if self.hasUnitInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI()
+autoTrigger: if numberOfUnitsInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI()
 addWaypoint_type: move
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
