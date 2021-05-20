@@ -81,7 +81,7 @@ addActionCooldownTime: 6s
 [action_AiStrongRetreat]
 text: retreat (AI)
 isVisible: false
-autoTrigger: if numberOfUnitsInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI()
+autoTrigger: if numberOfUnitsInTeam(withinRange=450, lessThan=4) and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='follow') or self.hp(lessThan=${core.maxHp * 0.45}) and not self.hasActiveWaypoint(type='move') and self.resource(type='diff', greaterThan=6) and self.isControlledByAI() and not self.hasActiveWaypoint(type='build')
 addWaypoint_type: move
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
@@ -93,7 +93,7 @@ text: AI Defender
 buildSpeed: 0s
 description: Assign Unit to Defend Base
 isVisible: if self.isControlledByAI() and not self.tags(includes='defMe') and not self.tags(includes='turret') and not self.tags(includes='hint') and not numberOfUnitsInTeam(withinRange=150, greaterThan=2) and not self.tags(includes='buildi')
-ai_isHighPriority: if numberOfUnitsInTeam(withTag='Defender', lessThan=5, withinRange=400) and self.hp(full=true) and not numberOfUnitsInEnemyTeam(withinRange=300, greaterThan=2) and self.timeAlive(laterThanSeconds=10) and self.resource(type='diff', greaterThan=9) or self.globalTeamTags(includes='defensive') and numberOfUnitsInTeam(withTag='Defender', lessThan=15)
+ai_isHighPriority: if numberOfUnitsInTeam(withTag='Defender', lessThan=2, withinRange=400) and self.hp(full=true) and not numberOfUnitsInEnemyTeam(withinRange=300, greaterThan=2) and self.timeAlive(laterThanSeconds=10) and self.resource(type='diff', greaterThan=9) or self.globalTeamTags(includes='defensive') and numberOfUnitsInTeam(withTag='Defender', lessThan=15)
 ai_isDisabled: if self.tags(includes='defMe')
 temporarilyAddTags: Defender
 addActionCooldownTime: 60s
