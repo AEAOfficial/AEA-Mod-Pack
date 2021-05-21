@@ -32,8 +32,8 @@ displayColor:#C0C0C0
 [action_AirAttack]
 text: Air Raid!
 isVisible: if self.isControlledByAI()
-ai_isHighPriority: if self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=400, greaterThan=0)
-ai_isDisabled: if not self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=400, greaterThan=0)
+ai_isHighPriority: if self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=250, greaterThan=1)
+ai_isDisabled: if not self.numberOfUnitsInEnemyTeam(withTag='air', withinRange=250, greaterThan=1)
 temporarilyAddTags: attackByAir
 
 #No More Air Units attacking

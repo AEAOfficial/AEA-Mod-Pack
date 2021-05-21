@@ -64,7 +64,7 @@ addActionCooldownTime: 6s
 [action_AiStrongRetreat]
 text: retreat (AI)
 isVisible: false
-autoTrigger: if self.hp(lessThan=${core.maxHp*0.5}) and self.isControlledByAI or numberOfUnitsInEnemyTeam(withTag='antiair', greaterThan=0, withinRange=420) and not numberOfUnitsInTeam(withTag='air', lessThan=5, withinRange=420)
+autoTrigger: if self.hp(lessThan=${core.maxHp*0.3}) and self.isControlledByAI and not self.hp(greaterThan=3500) or numberOfUnitsInEnemyTeam(withTag='antiair', greaterThan=0, withinRange=420) and not numberOfUnitsInTeam(withTag='air', lessThan=5, withinRange=420)
 addWaypoint_type: move
 addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
