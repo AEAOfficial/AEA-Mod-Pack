@@ -87,6 +87,7 @@ addWaypoint_target_nearestUnit_tagged: fallback
 addWaypoint_target_nearestUnit_team: own
 #addWaypoint_prepend: true
 clearAllWaypoints: true
+requireConditional: if not self.tags(includes='aibuilder')
 
 [action_DEFENDER]
 text: AI Defender
